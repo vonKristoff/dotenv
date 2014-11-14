@@ -1,0 +1,9 @@
+# my custom scripts folder
+
+export PATH=$PATH:~/.bin 											
+
+# enviroment paths for 3rd party dependencies (ruby,grunt,node)
+
+export PATH=$PATH:~/.rvm/bin 	# Add RVM to PATH for scripting // needs export cmd? .. been checking dont think so - they r just variations
+
+[[ -s ~/.rvm/scripts/rvm ]] && . ~/.rvm/scripts/rvm # Load RVM into a shell session *as a function*
