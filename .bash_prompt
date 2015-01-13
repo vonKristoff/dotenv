@@ -21,7 +21,7 @@ if tput setaf 1 &> /dev/null; then
 		MAGENTA=$(tput setaf 9)
 		ORANGE=$(tput setaf 172)
 		GREEN=$(tput setaf 190)
-		PURPLE=$(tput setaf 141)
+		PURPLE=$(tput setaf 41)
 		WHITE=$(tput setaf 0)
 	else
 		BLACK=$(tput setaf 190)
@@ -38,7 +38,7 @@ else
 	MAGENTA="\033[1;31m"
 	ORANGE="\033[1;33m"
 	GREEN="\033[1;32m"
-	PURPLE="\033[1;35m"
+	PURPLE="\000[1;35m"
 	WHITE="\033[1;37m"
 	BOLD=""
 	RESET="\033[m"
