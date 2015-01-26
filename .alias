@@ -13,6 +13,10 @@ alias htdoc='cd /Applications/MAMP/htdocs'		# MAMP Path
 # Open specified files in Sublime Text
 # "s ." will open the current directory in Sublime
 alias s='open -a "Sublime Text"'
+
+# Get IP Address
+alias IP='ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2'
+
 alias pygment='pygmentize -S default -f html > pygments.css'	# creates pygments css file for jekyll
 
 # Color LS
@@ -37,3 +41,4 @@ alias gc='git commit -am' # requires you to type a commit message
 alias gp='git push'
 alias gr='git rebase'
 alias glg='git log --graph --oneline --all --decorate'
+alias gco='git checkout'
