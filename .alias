@@ -15,7 +15,7 @@ alias htdoc='cd /Applications/MAMP/htdocs'		# MAMP Path
 alias s='open -a "Sublime Text"'
 
 # Get IP Address
-alias IP='ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2 | pbcopy'
+alias IP='ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2 | pbcopy | echo "IP address copied to clipboard."'
 
 alias pygment='pygmentize -S default -f html > pygments.css'	# creates pygments css file for jekyll
 
