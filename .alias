@@ -1,8 +1,19 @@
 #import private ssh alias
 . ~/.dotfiles/.ssh-paths
 
+###
+# NEVERBLAND
+###
+# alias start-docker='docker-machine start default > /dev/null && eval $(docker-machine env default)'
+
+# DOCKER_STATUS=$(docker-machine status default)
+
+# if [[ $DOCKER_STATUS == "Running" ]]; then
+#     eval $(docker-machine env default)
+# fi
+
 # Step back
-alias ..='cd ..'
+#alias ..='cd ..'
 
 # quick paths
 alias htdoc='cd /Applications/MAMP/htdocs'		# MAMP Path
@@ -18,15 +29,15 @@ alias m='open -a "Mou"'
 # Get IP Address
 alias IP='ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2 | pbcopy | echo "IP address copied to clipboard."'
 
-alias pygment='pygmentize -S default -f html > pygments.css'	# creates pygments css file for jekyll
+#alias pygment='pygmentize -S default -f html > pygments.css'	# creates pygments css file for jekyll
 
 # Color LS
-colorflag="-G"
-alias ls="command ls ${colorflag}"
-alias lsa="command ls -a ${colorflag}" #list all files
-alias l="ls -lF ${colorflag}" # all files, in long format
-alias la="ls -laF ${colorflag}" # all files inc dotfiles, in long format
-alias lsd='ls -lF ${colorflag} | grep "^d"' # only directories
+# colorflag="-G"
+# alias ls="command ls ${colorflag}"
+# alias lsa="command ls -a ${colorflag}" #list all files
+# alias l="ls -lF ${colorflag}" # all files, in long format
+# alias la="ls -laF ${colorflag}" # all files inc dotfiles, in long format
+# alias lsd='ls -lF ${colorflag} | grep "^d"' # only directories
 
 # Colored up cat!
 # You must install Pygments first - "sudo easy_install Pygments"
@@ -41,5 +52,6 @@ alias gl='git pull'
 alias gc='git commit -am' # requires you to type a commit message
 alias gp='git push'
 alias gr='git rebase'
+alias grc='git rebase --continue'
 alias glg='git log --graph --oneline --all --decorate'
-alias gco='git checkout'
+alias gck='git checkout'

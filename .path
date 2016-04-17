@@ -1,6 +1,12 @@
+# homebrew
+export PATH=$PATH:/usr/local/bin
+
+# npm
+export PATH="$HOME/.node/bin:$PATH"
+
 # my custom scripts folder
 
-export PATH=$PATH:~/.bin 											
+export PATH=$PATH:~/.bin
 
 # enviroment paths for 3rd party dependencies (ruby,grunt,node)
 
