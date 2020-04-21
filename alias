@@ -10,7 +10,6 @@ alias ...='cd ../../'
 alias s='open -a "Sublime Text"'
 alias m='open -a "Mou"'
 alias t='open -a "Typora"'
-alias vsc='open -a "Code"'
 
 alias list="tree -I 'node_modules' -L 2"
 
