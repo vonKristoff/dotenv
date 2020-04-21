@@ -7,6 +7,8 @@ export PATH="$HOME/.node/bin:$PATH"
 # my custom scripts folder
 
 export PATH=$PATH:~/.bin
+export PATH=$PATH:~/.bin/build-generator
+export PATH=$PATH:~/.bin/vue-component
 
 # enviroment paths for 3rd party dependencies (ruby,grunt,node)
 

@@ -1,47 +1,21 @@
-#import private ssh alias
-. ~/.dotfiles/.ssh-paths
-
-###
-# NEVERBLAND
-###
-# alias start-docker='docker-machine start default > /dev/null && eval $(docker-machine env default)'
-
-# DOCKER_STATUS=$(docker-machine status default)
-
-# if [[ $DOCKER_STATUS == "Running" ]]; then
-#     eval $(docker-machine env default)
-# fi
-
-# Step back
-#alias ..='cd ..'
-
-# quick paths
-alias htdoc='cd /Applications/MAMP/htdocs'		# MAMP Path
-
-
 ## Commands ##
+
+alias list="tree -I 'node_modules' -L 2"
+
+alias ...='cd ../../'
 
 # Open specified files in Sublime Text
 # "s ." will open the current directory in Sublime
+
 alias s='open -a "Sublime Text"'
 alias m='open -a "Mou"'
+alias t='open -a "Typora"'
+alias vsc='open -a "Code"'
+
+alias list="tree -I 'node_modules' -L 2"
 
 # Get IP Address
 alias IP='ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2 | pbcopy | echo "IP address copied to clipboard."'
-
-#alias pygment='pygmentize -S default -f html > pygments.css'	# creates pygments css file for jekyll
-
-# Color LS
-# colorflag="-G"
-# alias ls="command ls ${colorflag}"
-# alias lsa="command ls -a ${colorflag}" #list all files
-# alias l="ls -lF ${colorflag}" # all files, in long format
-# alias la="ls -laF ${colorflag}" # all files inc dotfiles, in long format
-# alias lsd='ls -lF ${colorflag} | grep "^d"' # only directories
-
-# Colored up cat!
-# You must install Pygments first - "sudo easy_install Pygments"
-alias cat='pygmentize -O style=monokai -f console256 -g'
 
 # Git
 alias gs='git status'
@@ -55,3 +29,12 @@ alias gr='git rebase'
 alias grc='git rebase --continue'
 alias glg='git log --graph --oneline --all --decorate'
 alias gck='git checkout'
+
+# removes all changes made, including untracked files
+alias gdrop='git stash -u && git stash drop'
+# rollback by one commit
+alias rollback='git reset --hard HEAD~1'
+
+#osx
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
